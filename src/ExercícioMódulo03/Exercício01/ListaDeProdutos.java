@@ -1,4 +1,4 @@
-package Módulo03.Exercício01;
+package ExercícioMódulo03.Exercício01;
 
 import java.util.HashMap;
 import java.util.Map;

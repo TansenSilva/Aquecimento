@@ -1,4 +1,4 @@
-package Módulo03.Exercício02;
+package ExercícioMódulo03.Exercício02;
 
 public class Candidato {
 

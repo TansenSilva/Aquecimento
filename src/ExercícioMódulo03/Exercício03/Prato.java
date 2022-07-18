@@ -1,4 +1,4 @@
-package Módulo03.Exercício03;
+package ExercícioMódulo03.Exercício03;
 
 public class Prato {
 
