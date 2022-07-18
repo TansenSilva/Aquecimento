@@ -10,10 +10,14 @@ public class Lista {
     Set<Prato> listaDePratos = new HashSet<>();
 
     public Lista() {
-        this.listaDePratos = listaDePratos;
     }
 
-    public void adicionarPrato(Prato prato){
+    public void adicionarPrato(){
+        System.out.print("Digite o nome do prato: ");
+        String nomePrato = input.nextLine();
+        System.out.print("Digite os ingredientes do prato: ");
+        String ingredientes = input.nextLine();
+        Prato prato = new Prato(nomePrato, ingredientes);
         this.listaDePratos.add(prato);
     }
 

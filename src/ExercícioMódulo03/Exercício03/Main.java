@@ -10,18 +10,13 @@ public class Main {
         boolean repetirMenu = true;
         while (repetirMenu) {
             System.out.println();
-            System.out.print("Escolha uma opção:\n1-Cadastrar prato\n2-Exibir pratos cadastrados\n3-Excluir prato cadastrado\n4-Finalizar\n");
+            System.out.print("Escolha uma opção:\n1-Cadastrar prato\n2-Exibir prato(s) cadastrado(s)\n3-Excluir prato cadastrado\n4-Finalizar\n");
             System.out.print("Digite a opção escolhida: ");
             int menu = Integer.parseInt(input.nextLine());
             System.out.println();
             switch (menu) {
                 case 1:
-                    System.out.print("Digite o nome do prato: ");
-                    String nomePrato = input.nextLine();
-                    System.out.print("Digite os ingredientes do prato: ");
-                    String ingredientes = input.nextLine();
-                    Prato prato = new Prato(nomePrato, ingredientes);
-                    novaLista.adicionarPrato(prato);
+                    novaLista.adicionarPrato();
                     break;
                 case 2:
                     novaLista.exibirPrato();
