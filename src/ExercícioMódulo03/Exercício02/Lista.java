@@ -13,7 +13,12 @@ public class Lista {
         this.listaDeCandidatos = listaDeCandidatos;
     }
 
-    public void adicionarCandidato(Candidato candidato){
+    public void adicionarCandidato(){
+        System.out.print("Digite a matrícula do candidato: ");
+        String matricula = input.next();
+        System.out.print("Digite a nota do candidato: ");
+        double nota = input.nextDouble();
+        Candidato candidato = new Candidato(matricula, nota);
         this.listaDeCandidatos.add(candidato);
     }
 
